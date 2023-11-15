@@ -44,6 +44,7 @@ typedef struct instruction_s
 } instruction_t;
 
 extern stack_t *head;
+stack_t *head = NULL;
 typedef void (*op_func)(stack_t **, unsigned int);
 
 
@@ -73,7 +74,5 @@ void open_file(char *file_name);
 void string_err(int error_code, ...);
 void err(int error_code, ...);
 void more_err(int error_code, ...);
-
-int len_chars(FILE *);
 
 #endif
